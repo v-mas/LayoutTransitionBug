@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <FrameLayout
+        android:id="@+id/container_bottom_animate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/squircle" />
+
+    <FrameLayout
+        android:id="@+id/container_bottom_noanim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/squircle" />
+
+    <Button
+        android:id="@+id/btn_replace"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="replace" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_replace"
+        android:layout_alignParentEnd="true"
+        android:text="remove" />
+
+</RelativeLayout>
